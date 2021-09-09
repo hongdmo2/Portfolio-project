@@ -51,9 +51,10 @@
 
 body{
   
-  font-family: "Roboto Condensed" sans-serif;
+  font-family: "Roboto Condensed", sans-serif !important;
 
 }
+
 /***********************************NAVBAR********************************************/
 nav{
   z-index:2;
@@ -111,12 +112,11 @@ nav ul li{
   top:0;
   left: 0;
   right: 0;
-  bottom: 20rem;
+  bottom: 12rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: "Roboto Condensed", sans-serif;
   z-index: 1;
 
 }
@@ -130,7 +130,7 @@ nav ul li{
     font-size: 25px !important;
   }
   .typed-text{
-    font-size: 15px !important;
+    font-size: 20px !important;
   }
 }
 
@@ -141,13 +141,20 @@ nav ul li{
 }
 
 /****************HEADER MAIN OFFER BUTTON*******************/
+a.btn-main-offer{
+  position:relative;
+  bottom: -12rem;
+}
 .btn-main-offer{
+  
+  margin: 2rem;
   border: 1px solid var(--primary-darkred);
   text-transform: uppercase;
   border-radius: 0;
   padding: 0.625rem 0.75rem 0.75rem 0.75rem;
   color: var(--primary-black);
-  margin: 2rem;
+  
+  
 }
 .btn-main-offer:hover{
   text-decoration:  none;
@@ -170,3 +177,31 @@ nav ul li{
     display: none;
   }
 }*/
+.Changoh{
+  color:var(--primary-darkred);
+}
+
+/**********************************ABOUT ME***********************************/
+.photo-wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-img{
+  width:16rem;
+  border-radius: 50%;
+  padding: .3rem;
+  border: 1px solid var(--primary-indian-red);
+}
+
+.about-heading{
+  color: var(--primary-darkred);
+  text-transform: uppercase;
+}
+
+@media(max-width: 973px){
+  .profile-img {
+    
+    width: 10rem;
+  }
+}
