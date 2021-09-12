@@ -14,7 +14,9 @@ const AboutMe = () => {
                     <h1 className="about-heading">about me</h1>
                     <p>
                         Hello! I am Changoh. I created responsive portfolio website that are displayed on all devices desktops and smartphones.
-
+                        Flexible hard worker ready to learn and contribute to team success. Experienced in handling multiple assignments with outstanding analytical and problem-solving skills. 
+                        Strong ability to applyconcepts of software engineering, programming language, and technical knowledge to interpret business needs and industrystandards. 
+                        Highly organized, proactive and punctual with a team-oriented mentality.
                     </p>
                 </span>
             </div>
