@@ -19,7 +19,7 @@ const Services = () => {
                         {/* */}
                         <div className="col-lg-3 col-md-6 col-lg-3 col-sm-6">
                             <div className="box">
-                            <div className="circle"><FontAwesomeIcon className="icon" icon={faJava} size="2x" /></div>
+                             <div className="circle"><FontAwesomeIcon className="icon" icon={faJava} size="2x" /></div>
                                 <h3>Java</h3>
                                 <p>High-level, class-based, object-oriented programming language.</p>
                             </div>
