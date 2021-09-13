@@ -1,43 +1,43 @@
 import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAws, faPython } from "@fortawesome/free-brands-svg-icons";
-import { faDesktop, faFileCode } from "@fortawesome/free-solid-svg-icons";
+import {  faJava, faPython, faReact } from "@fortawesome/free-brands-svg-icons";
+import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 
 const Services = () => {
     return (
         <div className="services">
-            <h1 className="py-5"> my services </h1>
+            <h1 className="py-5"> my skills </h1>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-3 col-md-6 col-lg-3 col-sm-6">
                             <div className="box">
-                                <div className="circle"><FontAwesomeIcon className="icon" icon={faDesktop} size="2x" /></div>
-                                <h3>Web Design</h3>
-                                <p>I approach each project individually and always focus on the results</p>
+                                <div className="circle"><FontAwesomeIcon className="icon" icon={faReact} size="2x" /></div>
+                                <h3>React</h3>
+                                <p>open-source front-end JavaScript library for building user interfaces.</p>
                             </div>
                         </div>
                         {/* */}
                         <div className="col-lg-3 col-md-6 col-lg-3 col-sm-6">
                             <div className="box">
-                            <div className="circle"><FontAwesomeIcon className="icon" icon={faFileCode} size="2x" /></div>
-                                <h3>Web Development</h3>
-                                <p>Your website will be built with new proven technologies.</p>
+                            <div className="circle"><FontAwesomeIcon className="icon" icon={faJava} size="2x" /></div>
+                                <h3>Java</h3>
+                                <p>High-level, class-based, object-oriented programming language.</p>
                             </div>
                         </div>
                         {/* */}
                         <div className="col-lg-3 col-md-6 col-lg-3 col-sm-6">
                             <div className="box">
                             <div className="circle"><FontAwesomeIcon className="icon" icon={faPython} size="2x" /></div>
-                                <h3>Facebook Ads SMn</h3>
-                                <p>your potential client will see your services or product on facebook</p>
+                                <h3>Python</h3>
+                                <p>Interpreted high-level general-purpose programming language</p>
                             </div>
                         </div>
                         {/* */}
                         <div className="col-lg-3 col-md-6 col-lg-3 col-sm-6">
                             <div className="box">
-                            <div className="circle"><FontAwesomeIcon className="icon" icon={faAws} size="2x" /></div>
-                                <h3>Facebook Ads SMn</h3>
-                                <p>your servies or product will appear at the top of the google search</p>
+                            <div className="circle"><FontAwesomeIcon className="icon" icon={faDatabase} size="2x" /></div>
+                                <h3>SQL</h3>
+                                <p>Domain-specific language used in programming and designed for managing data held in a relational database management system.</p>
                             </div>
                         </div>
                         {/* */}
