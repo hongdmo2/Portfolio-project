@@ -2,9 +2,9 @@ import React from "react";
 import Typed from "react-typed";
 const Header = () => {
     return(
-        <div className="header-wrapper">
+        <div id="home" className="header-wrapper">
             <div className="main-info">
-                <h1>Hi, I'm <span className="Changoh">Changoh.</span></h1>
+                <h1>Hi, I'm <span className="Changoh">Alex.</span></h1>
                 <h1>Welcome to my portfolio website!</h1>
                 <h1>I'm a</h1>
                 

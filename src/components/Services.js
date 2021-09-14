@@ -5,7 +5,7 @@ import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 
 const Services = () => {
     return (
-        <div className="services">
+        <div id="skills" className="services">
             <h1 className="py-5"> my skills </h1>
                 <div className="container">
                     <div className="row">

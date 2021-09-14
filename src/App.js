@@ -8,6 +8,7 @@ import Services from './components/Services';
 import Experience from './components/Experience';
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -42,9 +43,10 @@ function App() {
      <Header />
      <AboutMe />
      <Services />
-     <Experience />
      <Portfolio />
+     <Experience />
      <Contact />
+     <Footer />
      
     </>
   );
