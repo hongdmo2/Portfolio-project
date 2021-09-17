@@ -3,6 +3,7 @@ import chat_app1 from "../chat_app1.png"
 import chat_app from "../chat_app2.png";
 import bank_app from "../Bank_application.png";
 import portfolio_app from "../portfolio.png";
+import TWOAPIS_app from "../two apis.png";
 //FONTAWESOME imports
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
@@ -16,7 +17,7 @@ export const Portfolio = () => {
         const content = (
             <>
                 <img className="portfolio-image-popupbox" src={chat_app} alt="chat app ..." />
-                <p>
+                <p className="portfolio-P">
                     ReactJS, Chat Engine, APIs, UI kit
                 </p>
 
@@ -24,7 +25,8 @@ export const Portfolio = () => {
                     https://github.com/hongdmo2/React_chat_application
                 </button>
             </>)
-        PopupboxManager.open({ content,
+        PopupboxManager.open({
+            content,
             config: {
                 titleBar: {
                     enable: true,
@@ -34,16 +36,16 @@ export const Portfolio = () => {
                 fadeInSpeed: 500
             }
         })
-        
+
     }
-    
-    
+
+
     // Bank-application
     const openPopupboxBankapp = () => {
         const content = (
             <>
                 <img className="portfolio-image-popupbox" src={bank_app} alt="bank app ..." />
-                <p>
+                <p className="portfolio-P">
                     JAVA,  7 Different Deisign Patterns
                 </p>
 
@@ -52,7 +54,8 @@ export const Portfolio = () => {
                     https://github.com/hongdmo2/CS370-Project1
                 </button>
             </>)
-        PopupboxManager.open({ content,
+        PopupboxManager.open({
+            content,
             config: {
                 titleBar: {
                     enable: true,
@@ -64,20 +67,21 @@ export const Portfolio = () => {
         })
     }
 
-    
+
     // PortFolio
     const openPopupboxPortfolio = () => {
         const content = (
             <>
                 <img className="portfolio-image-popupbox" src={portfolio_app} alt="chat app ..." />
-                <p>
+                <p className="portfolio-P">
                     ReactJS, Bootstrap, HTML, CSS
                 </p>
                 <b>Github:</b> <button className="hyper-link" onClick={() => window.open("https://github.com/hongdmo2/Portfolio-project")}>
                     https://github.com/hongdmo2/Portfolio-project
                 </button>
             </>)
-        PopupboxManager.open({ content,
+        PopupboxManager.open({
+            content,
             config: {
                 titleBar: {
                     enable: true,
@@ -88,8 +92,32 @@ export const Portfolio = () => {
             }
         })
     }
+    //Two APIs
+    const openPopupboxTwoAPIS = () => {
+        const content = (
+            <>
+                <img className="portfolio-image-popupbox" src={TWOAPIS_app} alt="two APIs ..." />
+                <p className="portfolio-P">
+                    html, javascript, HTTP and HTTPS on Node.js without libraries and third party modules
+                </p>
+                <b>Github:</b> <button className="hyper-link" onClick={() => window.open("https://github.com/hongdmo2/Two-APIs-synchronously")}>
+                    https://github.com/hongdmo2/Two-APIs-synchronously
+                </button>
+            </>)
+        PopupboxManager.open({
+            content,
+            config: {
+                titleBar: {
+                    enable: true,
+                    text: "Two-Apis Synchronously"
+                },
+                fadeIn: true,
+                fadeInSpeed: 500
+            }
+        })
+    }
 
-    
+
     return (
         <div id="portfolio" className="portfolio-wrapper">
             <div className="container">
@@ -118,10 +146,23 @@ export const Portfolio = () => {
 
                     </div>
 
+                    {/* - */}
+                    <div className="portfolio-image-box" onClick={openPopupboxTwoAPIS}>
+                        <img className="portfolio-image" src={TWOAPIS_app} alt="Portfolio Project..." />
+                        <div className="overflow"></div>
+                        <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+
+                    </div>
+
                 </div>
             </div>
-            <PopupboxContainer  />
-            
+            <PopupboxContainer />
+            <div className="formore-box">
+                For more portfolio... <b>Github:</b> <button className="hyper-link" onClick={() => window.open("https://github.com/hongdmo2")}>
+                    https://github.com/hongdmo2
+                </button>
+            </div>
+
         </div>
 
     )
